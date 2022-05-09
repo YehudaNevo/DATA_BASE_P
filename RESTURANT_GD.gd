@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2872
+Password=2405
 Database=
 DateFormat=
 CommitCount=0
@@ -34,13 +34,14 @@ Master=
 Name=CITY
 Type=VARCHAR2
 Size=20
-Data=City 
+Data=List('JERUSALEM', 'TEL-AVIV', 'HAIFA', 'HOLON', 'BNEY-BRAK', 'EILAT','ASHDOD', 'GIVATAIM', 'RANANA', 'KIRYAT-ARBA', 'AKKO', 'NETENYA', 'KIRYAT=SHMONA', 'KATZRIN') ) +  
 Master=
 
 [Record]
 Name=R_NAME
 Type=VARCHAR2
 Size=18
-Data=Company
+Data=List('MAADANY_', 'SHIPUDEY_', 'FLAFEL_', 'PIZZA_', 'SUSHI_', 'STECIAT_') + LIST('DAVID', 'YUDA', 'YONI', 'MOSHIKO', 'OFFER', 'DUDU','DANY', 'KING_BIBI', 'TIBI', 'KOKO', 'REFHAEL', 'ELI', 'DAN', 'BARAK', 'GAL', 'ZIV', 'ORI', 'NAFTALY', 'AVI', 'ITSIK', 'BENY'
+='ARIEH')
 Master=
 

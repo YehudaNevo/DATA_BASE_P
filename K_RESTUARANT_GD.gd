@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2535
+Password=2491
 Database=
 DateFormat=
 CommitCount=0
@@ -24,7 +24,7 @@ Data=List(SELECT R_ID FROM RESTAURANT)
 Master=
 
 [Record]
-Name=CR_ID
+Name=KC_ID
 Type=NUMBER
 Size=
 Data=List(SELECT KC_ID FROM KOSHER_CERTIFICATE)
