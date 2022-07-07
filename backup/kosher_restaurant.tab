@@ -1,0 +1,38 @@
+create table SYSTEM.KOSHER_RESTAURANT
+(
+  r_id  NUMBER not null,
+  kc_id NUMBER not null
+)
+tablespace SYSTEM
+  pctfree 10
+  pctused 40
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+alter table SYSTEM.KOSHER_RESTAURANT
+  add constraint KR_PK primary key (R_ID, KC_ID)
+  using index 
+  tablespace SYSTEM
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+alter table SYSTEM.KOSHER_RESTAURANT
+  add constraint CR_FK foreign key (KC_ID)
+  references SYSTEM.KOSHER_CERTIFICATE (KC_ID);
+alter table SYSTEM.KOSHER_RESTAURANT
+  add constraint R_FK foreign key (R_ID)
+  references SYSTEM.RESTAURANT (R_ID);
+

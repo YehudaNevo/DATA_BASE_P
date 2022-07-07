@@ -2,7 +2,7 @@
 create table KOSHER_RESTAURANT
 (
   r_id  NUMBER not null,
-  cr_id NUMBER not null
+  kc_id NUMBER not null
 )
 tablespace SYSTEM
   pctfree 10
@@ -18,7 +18,7 @@ tablespace SYSTEM
   );
 -- Create/Recreate primary, unique and foreign key constraints 
 alter table KOSHER_RESTAURANT
-  add constraint KR_PK primary key (R_ID, CR_ID)
+  add constraint KR_PK primary key (R_ID, KC_ID)
   using index 
   tablespace SYSTEM
   pctfree 10
@@ -32,7 +32,7 @@ alter table KOSHER_RESTAURANT
     maxextents unlimited
   );
 alter table KOSHER_RESTAURANT
-  add constraint CR_FK foreign key (CR_ID)
+  add constraint CR_FK foreign key (KC_ID)
   references KOSHER_CERTIFICATE (KC_ID);
 alter table KOSHER_RESTAURANT
   add constraint R_FK foreign key (R_ID)

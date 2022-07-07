@@ -1,12 +1,13 @@
 -- Create table
-create table FACTORY
+create table PRODUCT
 (
-  f_id      NUMBER not null,
-  f_name    VARCHAR2(20),
-  f_address VARCHAR2(20)
+  p_id   NUMBER not null,
+  p_name VARCHAR2(20),
+  f_id   NUMBER
 )
-tablespace USERS
+tablespace SYSTEM
   pctfree 10
+  pctused 40
   initrans 1
   maxtrans 255
   storage
@@ -17,8 +18,8 @@ tablespace USERS
     maxextents unlimited
   );
 -- Create/Recreate primary, unique and foreign key constraints 
-alter table FACTORY
-  add constraint PK_ID primary key (F_ID)
+alter table PRODUCT
+  add constraint P_IDKEY primary key (P_ID)
   using index 
   tablespace SYSTEM
   pctfree 10
@@ -31,3 +32,6 @@ alter table FACTORY
     minextents 1
     maxextents unlimited
   );
+alter table PRODUCT
+  add constraint F_IDKEY foreign key (F_ID)
+  references FACTORY (F_ID) on delete cascade;

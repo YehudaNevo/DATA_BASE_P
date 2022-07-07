@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2405
+Password=2218
 Database=
 DateFormat=
 CommitCount=0
@@ -14,7 +14,7 @@ InitScript=
 [Table]
 Owner=SYSTEM
 Name=RESTAURANT
-Count=500
+Count=2000
 
 [Record]
 Name=R_ID

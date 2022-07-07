@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2904
+Password=2801
 Database=
 DateFormat=
 CommitCount=0
@@ -27,7 +27,7 @@ Master=
 Name=KI_NAME
 Type=VARCHAR2
 Size=20
-Data=List(Badaz_  , Rabanut_  , Mehadrin_ )  + City
+Data=List(Badaz_  , Rabanut_  , Mehadrin_, VaadHarabanim_ )  + List('JERUSALEM', 'TEL-AVIV', 'HAIFA', 'HOLON', 'BNEY-BRAK', 'EILAT','ASHDOD', 'GIVATAIM', 'RANANA', 'KIRYAT-ARBA', 'AKKO', 'NETENYA', 'KIRYAT=SHMONA', 'KATZRIN')
 Master=
 
 [Record]

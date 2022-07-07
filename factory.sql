@@ -1,9 +1,9 @@
 -- Create table
 create table FACTORY
 (
-  f_id      NUMBER not null,
-  f_name    VARCHAR2(20),
-  f_address VARCHAR2(20)
+  f_id   NUMBER not null,
+  f_name VARCHAR2(20),
+  f_city VARCHAR2(20)
 )
 tablespace USERS
   pctfree 10

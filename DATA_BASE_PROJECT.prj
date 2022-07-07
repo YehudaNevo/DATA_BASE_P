@@ -3,7 +3,7 @@ PL/SQL Developer Project
 [Options]
 AutoConnect=0
 Username=SYSTEM
-Password=2740347835363530
+Password=2535378537793357
 Database=XE
 ConnectAs=Normal
 Edition=
@@ -14,15 +14,15 @@ ShowItems=-1
 [Groups]
 
 [Files]
-1,0,,,factory.sql
-1,0,,,kosher_instetution.sql
-1,0,,,kosher_supervisor.sql
-1,0,,,kosher_certificate.sql
-1,0,,,restaurant.sql
-1,0,,,prodact.sql
-1,0,,,kosher_prodact.sql
-1,0,,,kosher_restaurant.sql
+1,4,,,factory.sql
+1,4,,,kosher_instetution.sql
+1,4,,,kosher_supervisor.sql
+1,4,,,kosher_certificate.sql
+1,4,,,restaurant.sql
+1,4,,,kosher_restaurant.sql
 1,0,,,DEL_TABLE.sql
+1,4,,,product.SQL
+1,4,,,kosher_product.sql
 
 [Notes]
 {\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil Arial;}}

@@ -1,12 +1,13 @@
--- Create table
-create table FACTORY
+create table SYSTEM.RESTAURANT
 (
-  f_id      NUMBER not null,
-  f_name    VARCHAR2(20),
-  f_address VARCHAR2(20)
+  r_id      NUMBER not null,
+  head_chef VARCHAR2(20),
+  city      VARCHAR2(20) not null,
+  r_name    VARCHAR2(20) not null
 )
-tablespace USERS
+tablespace SYSTEM
   pctfree 10
+  pctused 40
   initrans 1
   maxtrans 255
   storage
@@ -16,9 +17,8 @@ tablespace USERS
     minextents 1
     maxextents unlimited
   );
--- Create/Recreate primary, unique and foreign key constraints 
-alter table FACTORY
-  add constraint PK_ID primary key (F_ID)
+alter table SYSTEM.RESTAURANT
+  add constraint PK_R primary key (R_ID)
   using index 
   tablespace SYSTEM
   pctfree 10
@@ -31,3 +31,4 @@ alter table FACTORY
     minextents 1
     maxextents unlimited
   );
+

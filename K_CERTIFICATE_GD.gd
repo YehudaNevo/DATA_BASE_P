@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2136
+Password=2908
 Database=
 DateFormat=
 CommitCount=0
@@ -14,7 +14,7 @@ InitScript=
 [Table]
 Owner=SYSTEM
 Name=KOSHER_CERTIFICATE
-Count=1000
+Count=6000
 
 [Record]
 Name=KC_ID
@@ -49,5 +49,12 @@ Name=KS_ID
 Type=NUMBER
 Size=
 Data=List(select KS_ID from kosher_supervisor)
+Master=
+
+[Record]
+Name=PRICE_PM
+Type=NUMBER
+Size=
+Data=Random(1000, 10000)
 Master=
 
